@@ -55,10 +55,10 @@ async function sendMail() {
   const template = handlebars.compile(templateSource);
 
   const mailOptions = {
-    from: 'francismwaniki630@gmail.com',
-    to: 'francismwaniki630@gmail.com',
+    from: 'example@gmail.com',
+    to: 'example@gmail.com',
     subject: 'Welcome to Our Platform',
-    html: template({ name: 'Francis mwaniki' }), // Pass dynamic data to the template
+    html: template({ name: 'Francis' }), // Pass dynamic data to the template
   };
 
   try {
